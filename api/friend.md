@@ -25,9 +25,9 @@ friends        | true	      | array         | 朋友列表
 	  "uid" : 234523,
 	  "friends" : [{
 	    "id" : 1222, //long类型
-      "gender" : "1", // 1男 2女  
-      "remark" : "张三",
-      "nick": "爱跑人大卫"
+      	    "gender" : "1", // 1男 2女  
+            "remark" : "张三",
+      	    "nick": "爱跑人大卫"
 	  }]
 	}
 
