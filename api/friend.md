@@ -115,7 +115,7 @@ fid            | true	    | long           | 要添加的uid
 	{
 		"success":"true",
 		"data" :{
-		   "isAddble" : false,
+		   "isAddable" : false,
 		   "reason" : "已经有同类好友添加该用户"
 		}
 	}
