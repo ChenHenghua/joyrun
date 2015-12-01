@@ -6,6 +6,8 @@
 
 [3.删除已经成为好友的邀请记录](#3)
 
+[4.增加单条邀请记录](#4)
+
 ---
 ##<a id="1">1.将邀请为好友的记录批量添加至数据库</a>
 
@@ -112,6 +114,42 @@ uid            | true	    | long          | 用户id
 		"data" : {
 			"count" : 14
 		}
+	}
+
+#### 请求失败
+	{
+		"error_code":"10000",
+		"error_message":"XXXXX"
+	}
+
+---
+##<a id="4">4.增加单条邀请记录</a>
+
+### URL
+/invite/add.json
+
+### 请求方式
+POST
+
+### Header
+Content-Type : application/json
+
+### 请求参数
+     参数      | 必选 	    | 类型及范围     |说明
+-------------  | ---------- | -------------  |---------- 
+uid            | true	    | long          | 用户id
+invited_id     | true       | long          | 被邀请的用户id
+
+### 请求Json示例
+	{ 
+	  "uid" : 234523,
+	  "invited_id" : 111
+	}
+
+### 返回Json示例
+#### 请求成功
+	{
+		"success":"true"
 	}
 
 #### 请求失败
